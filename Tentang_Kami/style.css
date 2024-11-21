@@ -1,0 +1,124 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    flex: 1; /* Memberikan ruang kepada konten utama agar footer tetap di bawah */
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.bg-image {
+    background-image: url('/Website-Check-Your-Mind/Background/tentangkami.jpg'); /* Ganti URL ini dengan lokasi gambar latar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #33b679;
+}
+
+/* Logo styling */
+.logo {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Navbar brand styling */
+.navbar-brand span {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Nav link styling */
+.nav-link {
+    color: #333 !important;
+    padding-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #33b679 !important;
+}
+
+.nav-link.active {
+    color: #33b679 !important;
+}
+
+/* Styling untuk konten utama */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Wrapper untuk memusatkan konten */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Mengatur tinggi minimum agar konten tetap di tengah */
+}
+
+/* Styling untuk bagian konten */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 80%; /* Atur lebar maksimum konten */
+}
+
+.content-section div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Styling untuk footer */
+
+.footer {
+    background-color: #48C78E;
+    color: white;
+    padding: 20px 0;
+}
+.footer .contact-info {
+    font-size: 16px;
+}
+.footer .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.copyright {
+    background-color: #2C8364;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+    .section-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer .contact-info p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,86 @@
+/* Style dasar untuk body */
+body { 
+    height: 100%;
+    overflow: hidden; /* Menonaktifkan scroll */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image styling */
+.bg-image {
+    background-image: url('/Website-Check-Your-Mind/Background/Tanya&jawab.jpg'); /* Ganti dengan URL gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 60px; /* Tambahan untuk menghindari overlap dengan navbar */
+}
+
+/* Navbar styling */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.3s ease; /* Efek transisi saat hover */
+}
+
+/* Logo styling */
+.logo {
+    background-color: rgba(255, 255, 255, 0.5); /* Warna latar belakang dengan transparansi 50% */
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+    padding: 5px; /* Ruang di sekitar logo */
+}
+
+/* Navbar brand styling */
+.navbar-brand span {
+    font-size: 1.25rem; /* Ukuran font untuk tulisan di sebelah logo */
+    color: #333; /* Warna teks */
+}
+
+/* Nav link styling */
+.nav-link {
+    color: #333 !important;
+    padding-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Efek transisi saat hover pada link */
+}
+
+.nav-link:hover {
+    color: #33b679 !important; /* Warna link saat di-hover */
+}
+
+.nav-link.active {
+    color: #33b679 !important; /* Warna untuk link yang aktif */
+}
+
+/* Main content styling */
+.content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.btn-success {
+    background-color: #33b679; /* Warna hijau tombol */
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #28a067;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-success {
+        width: 80%;
+    }
+}
+

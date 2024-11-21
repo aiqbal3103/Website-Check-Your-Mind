@@ -1,0 +1,134 @@
+/* Style dasar untuk body */
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/Website-Check-Your-Mind/Background/Tanya&jawab.jpg'); /* Ganti dengan URL gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Mencegah scroll */
+}
+
+/* Navbar styling */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #33b679;
+}
+
+/* Logo styling */
+.logo {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Navbar brand styling */
+.navbar-brand span {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Nav link styling */
+.nav-link {
+    color: #333 !important;
+    padding-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #33b679 !important;
+}
+
+.nav-link.active {
+    color: #33b679 !important;
+}
+
+/* Content section styling */
+.content-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang dengan transparansi */
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Card container styling */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Content card styling */
+.content-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content-card p {
+    color: #333;
+    margin: 0;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Button styling */
+.btn-success {
+    background-color: #33b679;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn-success:hover {
+    background-color: #28a067;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-success {
+        width: 80%;
+    }
+}

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanya & Belajar</title>
+    <title>CheckYourMind - Tanya AI</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,7 +23,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Cek Stress</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tanya & Belajar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Website-Check-Your-Mind/Tanya&Belajar/index.html">Tanya & Belajar</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Website-Check-Your-Mind/Komunitas/index.html">Komunitas</a></li>
                     <li class="nav-item"><a class="nav-link" href="/Website-Check-Your-Mind/Tentang_Kami/index.html">Tentang Kami</a></li>
                 </ul>
@@ -34,15 +33,16 @@
 
     <!-- Main Content -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100 bg-image">
-        <div class="text-center content">
-            <h2 class="text-white">AYO BERTANYA</h2>
-            <a href="/Website-Check-Your-Mind/Tanya&Belajar/AI/index.html">
-                <button class="btn btn-success mb-4">Lanjut</button>
-            </a>
-            <h2 class="text-white">AYO BACA</h2>
-            <a href="/Website-Check-Your-Mind/Tanya&Belajar/Belajar/index.html">
-                <button class="btn btn-success">Lanjut</button>
-            </a>
+        <div class="overlay-box p-5 rounded">
+            <h2 class="text-center mb-4">TANYA AI</h2>
+            <div class="d-flex justify-content-between align-items-center">
+                <input type="text" class="form-control input-custom me-2" placeholder="Ketik Pesan">
+                <button class="btn btn-send">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                        <path d="M15.964.686a1.5 1.5 0 0 0-1.795-1.793L1.2 6.478a.75.75 0 0 0 .093 1.36l5.643 2.26 2.26 5.643a.75.75 0 0 0 1.361.093l7.585-13.174a1.5 1.5 0 0 0-.178-1.973zM6.313 8.222L1.443 6.64 13.36 1.143l-7.046 7.079z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 

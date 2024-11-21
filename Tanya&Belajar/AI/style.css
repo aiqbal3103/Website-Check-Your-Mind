@@ -1,0 +1,95 @@
+/* Body styling */
+body {
+    height: 100%;
+    overflow: hidden; /* Menonaktifkan scroll */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Background image styling */
+.bg-image {
+    height: 100vh; /* Mengatur tinggi menjadi 100% viewport height */
+    width: 100vw;  /* Mengatur lebar menjadi 100% viewport width */
+    background-image: url('/Website-Check-Your-Mind/Background/Tanya&jawab.jpg'); /* Ganti dengan URL gambar yang sesuai */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 60px; /* Tambahan untuk menghindari overlap dengan navbar */
+}
+
+/* Logo styling */
+.logo {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Navbar styling */
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f8f9fa; /* Warna default navbar */
+    transition: background-color 0.3s ease; /* Animasi transisi */
+}
+
+.navbar:hover {
+    background-color: #33b679; /* Warna hijau saat di-hover */
+}
+
+/* Navbar link styling */
+.navbar .nav-link {
+    color: #333 !important;
+    padding-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Transisi untuk warna teks */
+}
+
+.navbar .nav-link:hover {
+    color: #33b679 !important; /* Warna teks berubah menjadi putih saat di-hover */
+}
+
+/* Overlay box styling */
+.overlay-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan transparansi */
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Input styling */
+.input-custom {
+    background-color: #33b679; /* Warna hijau */
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.input-custom::placeholder {
+    color: #000000;
+}
+
+/* Button styling */
+.btn-send {
+    background-color: #33b679; /* Warna hijau */
+    border: none;
+    padding: 5px 15px;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animasi transisi */
+}
+
+.btn-send:hover {
+    background-color: #28a067; /* Warna hijau lebih gelap saat di-hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .input-custom, .btn-send {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
